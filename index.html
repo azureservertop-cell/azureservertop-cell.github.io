@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jianye Chen · Portfolio</title>
+<meta name="description" content="Projects and technical reports by Jianye Chen, AI and Machine Learning co-op student in London, Ontario.">
+<style>
+:root{--bg:#fbfbfa;--fg:#1d2430;--muted:#5b6575;--card:#fff;--line:#e3e6eb;--acc:#1f3a5f;--chip:#eef2f7}
+@media (prefers-color-scheme:dark){:root{--bg:#12161c;--fg:#e6e9ee;--muted:#9aa4b2;--card:#1a2029;--line:#2a313c;--acc:#8fb3e0;--chip:#232b36}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:860px;margin:0 auto;padding:48px 20px 64px}
+h1{font-size:2.1rem;margin:0;color:var(--acc);letter-spacing:.01em}
+.sub{color:var(--muted);margin:.3rem 0 1rem}
+.links a{color:var(--acc);margin-right:18px;text-decoration:none;font-weight:600}
+.links a:hover{text-decoration:underline}
+h2{font-size:.85rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:44px 0 14px;border-bottom:1px solid var(--line);padding-bottom:6px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:22px 24px;margin-bottom:18px}
+.card h3{margin:0 0 2px;font-size:1.2rem}
+.meta{color:var(--muted);font-size:.9rem;margin-bottom:12px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:14px 0}
+.stat{background:var(--chip);border-radius:8px;padding:10px 12px}
+.stat b{display:block;font-size:1.35rem;color:var(--acc);line-height:1.2}
+.stat span{font-size:.82rem;color:var(--muted)}
+ul{margin:8px 0 0;padding-left:20px}
+li{margin:4px 0}
+.tags{margin-top:12px}
+.tag{display:inline-block;background:var(--chip);border-radius:999px;padding:2px 10px;font-size:.8rem;margin:3px 4px 0 0;color:var(--muted)}
+.btn{display:inline-block;margin-top:14px;padding:7px 14px;border-radius:8px;background:var(--acc);color:var(--bg);text-decoration:none;font-weight:600;font-size:.9rem}
+.btn.ghost{background:transparent;color:var(--acc);border:1px solid var(--acc);margin-left:8px}
+footer{color:var(--muted);font-size:.85rem;margin-top:48px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>Jianye Chen</h1>
+  <p class="sub">AI and Machine Learning co-op student, Fanshawe College · London, Ontario · English and Mandarin</p>
+  <div class="links">
+    <a href="mailto:j_chen270634@fanshaweonline.ca">Email</a>
+    <a href="https://github.com/azureservertop-cell">GitHub</a>
+  </div>
+</header>
+
+<h2>Projects</h2>
+
+<section class="card" id="sts2">
+  <h3>Reinforcement Learning Agent for Slay the Spire 2</h3>
+  <div class="meta">Personal project · Oct 2026 – present · Python, PyTorch, C#</div>
+  <p>An agent that plays complete runs of a deck-building roguelike (about 50 floors and hundreds of decisions per run) without hand-written expert rules, trained on a single desktop PC.</p>
+  <div class="stats">
+    <div class="stat"><b>0% → 24.4%</b><span>single-attempt win rate, 300 fixed seeds</span></div>
+    <div class="stat"><b>36.8% → 64.5%</b><span>agreement with human play after pre-training</span></div>
+    <div class="stat"><b>22,108</b><span>human replays mined for pre-training</span></div>
+  </div>
+  <ul>
+    <li>AlphaZero-style system: information-set MCTS that never peeks at the draw order, a 9.1M-parameter policy-value network, and a PPO network for routing, card rewards, shops and rest sites.</li>
+    <li>Diagnosed why an earlier 22.8M-parameter Transformer + PPO agent showed ~60% training win rate but only 12% in real evaluation, and replaced it.</li>
+    <li>Strict evaluation: automated 300-seed tests every 4 hours and seed-paired ablations (search budget, PUCT vs Gumbel, value pricing).</li>
+  </ul>
+  <div class="tags"><span class="tag">Reinforcement learning</span><span class="tag">MCTS</span><span class="tag">PPO</span><span class="tag">PyTorch</span><span class="tag">C# / .NET</span></div>
+  <a class="btn" href="reports/STS2_RL_Agent_Report.pdf">Read the full report (PDF)</a>
+</section>
+
+<section class="card" id="spending">
+  <h3>AI Spending Secretary</h3>
+  <div class="meta">Capstone, Fanshawe College · Fall 2026 · Backend, OCR and ML lead (with Zhixi Ye, frontend)</div>
+  <p>A local-first app that turns receipt photos, e-mails and bank statements into an item-level ledger and gives advice before a purchase, such as noticing an item is already owned.</p>
+  <div class="stats">
+    <div class="stat"><b>64 / 64</b><span>receipts kept, 0/88 false keeps on a 152-photo album</span></div>
+    <div class="stat"><b>2/16 → 11/16</b><span>consistent readings after LoRA fine-tuning Qwen3-1.7B</span></div>
+    <div class="stat"><b>258</b><span>automated backend tests in CI</span></div>
+  </div>
+  <ul>
+    <li>Three-stage receipt cascade: MobileNetV3 image gate in ONNX (5 ms per photo), PaddleOCR, and a TF-IDF classifier for partial receipts.</li>
+    <li>Privacy tiers: fully offline, cloud on OCR text only with payment lines removed, or a local LLM served by Ollama.</li>
+    <li>Four Scrum sprints, 29 user stories in Jira, numbered reproducible experiments for every technical choice.</li>
+  </ul>
+  <div class="tags"><span class="tag">FastAPI</span><span class="tag">React / TypeScript</span><span class="tag">ONNX Runtime</span><span class="tag">OCR</span><span class="tag">LoRA</span></div>
+  <!--CAPSTONE_REPORT-->
+</section>
+
+<section class="card" id="eurosat">
+  <h3>EuroSAT Satellite Image Classification</h3>
+  <div class="meta">Course capstone · Aug 2026 · Python, PyTorch</div>
+  <div class="stats">
+    <div class="stat"><b>92.07%</b><span>test accuracy, 10 land-use classes</span></div>
+    <div class="stat"><b>+9.6 pts</b><span>over a frozen ResNet18 baseline</span></div>
+  </div>
+  <ul>
+    <li>3-layer CNN on 27,000 satellite images with stratified splits, early stopping, hyperparameter comparison and an augmentation ablation study.</li>
+  </ul>
+  <a class="btn" href="reports/EuroSAT_Final_Report.pdf">Read the full report (PDF)</a>
+</section>
+
+<h2>Open source</h2>
+<section class="card">
+  <h3>Project_Cymple · issue report</h3>
+  <div class="meta">Open-source ESP32-S3 VR face tracker</div>
+  <p>Diagnosed a device reboot loop with a 250 ms USB monitoring script and firmware logs, and proposed firmware fixes. <a href="https://github.com/Dominocs/Project_Cymple/issues/5">View the issue</a>.</p>
+</section>
+
+<footer>Last updated November 2026.</footer>
+</div>
+</body>
+</html>
