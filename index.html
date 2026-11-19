@@ -63,6 +63,24 @@ footer{color:var(--muted);font-size:.85rem;margin-top:48px}
   <a class="btn" href="reports/STS2_RL_Agent_Report.pdf">Read the full report (PDF)</a>
 </section>
 
+<section class="card" id="fkub">
+  <h3>FKUB: On-Device Offer Evaluator for Delivery Couriers</h3>
+  <div class="meta">Personal project · Nov 2026 · Kotlin, Jetpack Compose, Android Accessibility API, ML Kit</div>
+  <p>An Android app that reads each Uber Eats delivery offer as it pops up, checks it against the courier's own fuel, maintenance and target hourly rate, and answers with a coloured glow around the screen edge, so the decision takes no reading or arithmetic. Advice only: it never taps, has no network permission and saves no screenshots.</p>
+  <div class="stats">
+    <div class="stat"><b>Nodes → OCR</b><span>real-device study found offers hidden from the accessibility tree</span></div>
+    <div class="stat"><b>0</b><span>network permissions; screenshots never saved</span></div>
+    <div class="stat"><b>67</b><span>unit tests, incl. real offer text and OCR misreads</span></div>
+  </div>
+  <ul>
+    <li>Built a one-tap capture tool first; real snapshots showed the courier app hides its UI during offers, so recognition moved to window-only screenshots plus on-device ML Kit OCR with repair of misreads such as CA$678 → CA$6.78.</li>
+    <li>Earnings model: tip-free pay versus distance × vehicle cost per km + time × target net hourly, mapped to four tiers (red / yellow / green / blue) with per-tier sounds, speech and vibration.</li>
+    <li>Pure Kotlin core (parser, adapter, evaluator, tracker) decoupled from Android; conservative parsing returns "unknown" on any ambiguity; GitHub Actions builds and publishes the APK on every push; English and Chinese UI.</li>
+  </ul>
+  <div class="tags"><span class="tag">Android</span><span class="tag">Kotlin</span><span class="tag">Jetpack Compose</span><span class="tag">OCR</span><span class="tag">Accessibility</span><span class="tag">Privacy by design</span></div>
+  <a class="btn" href="reports/FKUB_Offer_Evaluator_Report.pdf">Read the full report (PDF)</a><a class="btn ghost" href="https://github.com/azureservertop-cell/Offerpilot">Source on GitHub</a>
+</section>
+
 <section class="card" id="spending">
   <h3>AI Spending Secretary</h3>
   <div class="meta">Capstone, Fanshawe College · Fall 2026 · Backend, OCR and ML lead (with Zhixi Ye, frontend)</div>
