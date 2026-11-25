@@ -72,6 +72,13 @@ footer{color:var(--muted);font-size:.85rem;margin-top:48px}
     <div class="stat"><b>On-device</b><span>OCR and evaluation; screenshots never saved</span></div>
     <div class="stat"><b>120+</b><span>unit tests, many built from real cards reported on the road</span></div>
   </div>
+  <div class="stats">
+    <div class="stat"><b>$16.5 → $22.2</b><span>my earnings per online hour, before vs with FKUB (+34%)</span></div>
+    <div class="stat"><b>$17.0 → $31.8</b><span>per hour actually on a trip (+86%): less driving and fuel for the same money</span></div>
+    <div class="stat"><b>$5.16 → $8.83</b><span>per trip (+71%); 2 days before, 5 days after</span></div>
+  </div>
+  <img src="img/fkub-before-after.svg" alt="Earnings per online hour by day: CA$17.7 and CA$16.2 before FKUB; CA$24.1, 18.7, 20.1, 18.5 and 25.2 with FKUB" style="width:100%;max-width:720px;height:auto;border-radius:8px;margin:8px 0">
+  <p style="font-size:.9em;opacity:.8">My own Uber earnings (tips included, before vehicle costs), Nov 17–18 without the app and Nov 19–24 with it. The trip that started the project: 29.92 km and 42 minutes for a CA$5.52 fare. Earning CA$100 took about 5.9 hours on trips before and 3.1 with the app, so about 47% less driving, fuel and wear for the same money (kilometres were not logged, so litres saved are not measured). One driver, one week, no control for demand or tips; not a promise for anyone else.</p>
   <ul>
     <li>Built a one-tap capture tool first; real snapshots showed the courier app hides its UI during offers, so recognition moved to window-only screenshots plus on-device ML Kit OCR with repair of misreads such as CA$678 → CA$6.78.</li>
     <li>Earnings model: tip-free pay versus distance × vehicle cost per km + time × target net hourly, mapped to four tiers (red / yellow / green / blue) with per-tier sounds, speech and vibration.</li>

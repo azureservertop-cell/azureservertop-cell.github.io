@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 380" width="720" height="380" font-family="system-ui,-apple-system,Segoe UI,Roboto,sans-serif" role="img" aria-label="Earnings per online hour by day, before and after FKUB">
+<rect width="720" height="380" fill="#ffffff"/>
+<text x="56" y="26" font-size="16" font-weight="600" fill="#191919">Earnings per online hour, by day (CA$)</text>
+<rect x="56" y="38" width="10" height="10" rx="2" fill="#257de0"/><text x="72" y="47" font-size="12" fill="#666666">Before FKUB (Nov 17–18)</text>
+<rect x="236" y="38" width="10" height="10" rx="2" fill="#f47230"/><text x="252" y="47" font-size="12" fill="#666666">With FKUB (Nov 19–24)</text>
+<line x1="56" x2="696" y1="324.0" y2="324.0" stroke="#e6e6e6" stroke-width="1"/><text x="48" y="328.0" font-size="11" fill="#666666" text-anchor="end">$0</text>
+<line x1="56" x2="696" y1="237.3" y2="237.3" stroke="#e6e6e6" stroke-width="1"/><text x="48" y="241.3" font-size="11" fill="#666666" text-anchor="end">$10</text>
+<line x1="56" x2="696" y1="150.7" y2="150.7" stroke="#e6e6e6" stroke-width="1"/><text x="48" y="154.7" font-size="11" fill="#666666" text-anchor="end">$20</text>
+<line x1="56" x2="696" y1="64.0" y2="64.0" stroke="#e6e6e6" stroke-width="1"/><text x="48" y="68.0" font-size="11" fill="#666666" text-anchor="end">$30</text>
+<path d="M79.7,324.0 V174.6 Q79.7,170.6 83.7,170.6 H119.7 Q123.7,170.6 123.7,174.6 V324.0 Z" fill="#257de0"><title>Nov 17: CA$48.08 in 2 h 43 min online, 10 trips = CA$17.70/h</title></path>
+<text x="101.7" y="164.6" font-size="12" font-weight="600" fill="#191919" text-anchor="middle">$17.7</text>
+<text x="101.7" y="340.0" font-size="11" fill="#666666" text-anchor="middle">Nov 17</text>
+<text x="101.7" y="354.0" font-size="10" fill="#666666" text-anchor="middle">2h43 · 10 trips</text>
+<path d="M171.1,324.0 V187.6 Q171.1,183.6 175.1,183.6 H211.1 Q215.1,183.6 215.1,187.6 V324.0 Z" fill="#257de0"><title>Nov 18: CA$163.32 in 10 h 05 min online, 31 trips = CA$16.20/h</title></path>
+<text x="193.1" y="201.6" font-size="12" font-weight="600" fill="#ffffff" text-anchor="middle">$16.2</text>
+<text x="193.1" y="340.0" font-size="11" fill="#666666" text-anchor="middle">Nov 18</text>
+<text x="193.1" y="354.0" font-size="10" fill="#666666" text-anchor="middle">10h05 · 31 trips</text>
+<path d="M262.6,324.0 V119.4 Q262.6,115.4 266.6,115.4 H302.6 Q306.6,115.4 306.6,119.4 V324.0 Z" fill="#f47230"><title>Nov 19: CA$72.21 in 3 h 00 min online, 7 trips = CA$24.07/h</title></path>
+<text x="284.6" y="109.4" font-size="12" font-weight="600" fill="#191919" text-anchor="middle">$24.1</text>
+<text x="284.6" y="340.0" font-size="11" fill="#666666" text-anchor="middle">Nov 19</text>
+<text x="284.6" y="354.0" font-size="10" fill="#666666" text-anchor="middle">3h00 · 7 trips</text>
+<path d="M354.0,324.0 V166.2 Q354.0,162.2 358.0,162.2 H394.0 Q398.0,162.2 398.0,166.2 V324.0 Z" fill="#f47230"><title>Nov 20: CA$53.52 in 2 h 52 min online, 7 trips = CA$18.67/h</title></path>
+<text x="376.0" y="156.2" font-size="12" font-weight="600" fill="#191919" text-anchor="middle">$18.7</text>
+<text x="376.0" y="340.0" font-size="11" fill="#666666" text-anchor="middle">Nov 20</text>
+<text x="376.0" y="354.0" font-size="10" fill="#666666" text-anchor="middle">2h52 · 7 trips</text>
+<path d="M445.4,324.0 V153.8 Q445.4,149.8 449.4,149.8 H485.4 Q489.4,149.8 489.4,153.8 V324.0 Z" fill="#f47230"><title>Nov 21: CA$124.98 in 6 h 13 min online, 14 trips = CA$20.10/h</title></path>
+<text x="467.4" y="143.8" font-size="12" font-weight="600" fill="#191919" text-anchor="middle">$20.1</text>
+<text x="467.4" y="340.0" font-size="11" fill="#666666" text-anchor="middle">Nov 21</text>
+<text x="467.4" y="354.0" font-size="10" fill="#666666" text-anchor="middle">6h13 · 14 trips</text>
+<path d="M536.9,324.0 V167.8 Q536.9,163.8 540.9,163.8 H576.9 Q580.9,163.8 580.9,167.8 V324.0 Z" fill="#f47230"><title>Nov 23: CA$22.80 in 1 h 14 min online, 3 trips = CA$18.49/h</title></path>
+<text x="558.9" y="157.8" font-size="12" font-weight="600" fill="#191919" text-anchor="middle">$18.5</text>
+<text x="558.9" y="340.0" font-size="11" fill="#666666" text-anchor="middle">Nov 23</text>
+<text x="558.9" y="354.0" font-size="10" fill="#666666" text-anchor="middle">1h14 · 3 trips</text>
+<path d="M628.3,324.0 V109.4 Q628.3,105.4 632.3,105.4 H668.3 Q672.3,105.4 672.3,109.4 V324.0 Z" fill="#f47230"><title>Nov 24: CA$176.59 in 7 h 00 min online, 20 trips = CA$25.23/h</title></path>
+<text x="650.3" y="99.4" font-size="12" font-weight="600" fill="#191919" text-anchor="middle">$25.2</text>
+<text x="650.3" y="340.0" font-size="11" fill="#666666" text-anchor="middle">Nov 24</text>
+<text x="650.3" y="354.0" font-size="10" fill="#666666" text-anchor="middle">7h00 · 20 trips</text>
+<line x1="71.7" x2="223.1" y1="180.9" y2="180.9" stroke="#191919" stroke-width="1.5" stroke-dasharray="5 4"/>
+<line x1="254.6" x2="680.3" y1="132.0" y2="132.0" stroke="#191919" stroke-width="1.5" stroke-dasharray="5 4"/>
+<text x="147.4" y="90.0" font-size="12" fill="#191919" text-anchor="middle">average $16.5/h</text>
+<text x="467.4" y="90.0" font-size="12" fill="#191919" text-anchor="middle">average $22.2/h (dashed lines = period averages)</text>
+</svg>
